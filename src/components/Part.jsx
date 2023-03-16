@@ -3,8 +3,8 @@ import "bulma/css/bulma.css";
 import "./Part.css"
 
 export default function Part(props) {
-  const handleInputChange = (event) => {
-    const { name, value, type, checked } = event.target;
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
     const newValue = type === "checkbox" ? checked : value;
     props.setFormData((prevState) => ({
       ...prevState,
