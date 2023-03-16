@@ -43,7 +43,7 @@ export default function Form() {
 
   return (
     <div>
-      <h1 className="title is-1 is-italic">Formilario</h1>
+      <h1 className="title is-1 is-italic">Formulario</h1>
       <div className="formulario box">
         <form onSubmit={handleFormSubmit}>
           {data.map((e, index) => (
